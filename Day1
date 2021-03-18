@@ -46,3 +46,9 @@ nums.length == index.length
 0 <= index[i] <= i
 
 Answer1)
+class Solution(object):
+    def createTargetArray(self, nums, index):
+        li=[]
+        for i in range(len(nums)):
+            li.insert(index[i],nums[i])
+        return li
